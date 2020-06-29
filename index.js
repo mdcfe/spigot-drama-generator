@@ -1,5 +1,5 @@
 const combinations = {
-    people: ["md_5", "Choco", "Aikar", "kashike", "electroniccat", "Z750", "LaxWasHere", "wizjany", "Me4502", "mbaxter", "Amaranth", "Tux", "andrewkm", "KHobbits", "ElgarL", "md678685", "Trent", "SupaHam", "pop4959", "JRoy", "zml", "Luck", "Proximyst", "Glare", "simpleauthority", "garbagemule", "DemonWav", "Songoda", "kangarko", "MiniDigger", "libraryaddict", "Puremin0rez", "Intelli"],
+    people: ["md_5", "Choco", "Aikar", "kashike", "electroniccat", "Z750", "LaxWasHere", "wizjany", "Me4502", "mbaxter", "Amaranth", "Tux", "andrewkm", "KHobbits", "ElgarL", "md678685", "Trent", "SupaHam", "pop4959", "JRoy", "zml", "Luck", "Proximyst", "Glare", "simpleauthority", "garbagemule", "DemonWav", "Songoda", "kangarko", "MiniDigger", "libraryaddict", "Puremin0rez", "Intelli", "KennyTV"],
     sites: ["SpigotMC Forums", "Minecraft Forums", "Reddit", "/r/admincraft", "PaperMC Discord", "GitHub", "SpigotMC JIRA", "IRC", "SpigotMC Resources", "Patreon", "wiki.vg/Protocol", "Twitch", "MCMarket", "Songoda.com", "MineAcademy", "Hangar", "BukkitDev", "Ore"],
     things: ["Paper", "Spigot", "Bungeecord", "CraftBukkit", "Fukkit", "Velocity", "EssentialsX", "GroupManager", "LuckPerms", "PermissionsEx v1", "Vault", "VanishNoPacket", "FactionsUUID", "Waterfall", "Tuinity", "Purpur", "LWC", "TreeAssist", "ChatControl", "ProtocolLib", "ViaVersion", "ViaRewind", "ViaBackwards", "ProtocolSupport", "Dynmap", "Fabric", "WorldEdit", "WorldGuard", "CraftBook", "Sponge", "SpongeForge", "SpongeVanilla", "Forge", "Mojang", "open-source plugins", "closed-source plugins", "CMI", "Genders", "EpicGenders", "MobArena", "Hangar", "the Bukkit API", "TruAntiLag", "MiniMessage", "MineDown", "mcMMO", "Lib's Disguises", "CoreProtect", "Prism", "LogBlock", "NuVotifier", "Votifier", "Ore"],
     servers: ["Empire Minecraft", "Mineplex", "2b2t", "SpigotCraft", "EcoCityCraft", "Minehut", "Hypixel", "Dyescape", "Mineteria", "CubeCraft"],
@@ -14,7 +14,7 @@ const combinations = {
     ac1: ["sue", "destroy the life of", "flame", "cause drama about", "complain about", "kick", "threaten to sue", "wave empty threats of lawsuits at", "DMCA", "yell about in IRC", "randomly pings"],
     price: ["$100", "$200", "$250", "$300", "$350", "$400", "$450", "$500", "$600"],
     activates: ["activates", "works", "functions", "breaks", "disables", "eliminate", "enhances"],
-    says: ["says", "tweets", "claims", "confirms", "denies", "agrees", "announces"],
+    says: ["says", "tweets", "claims", "confirms", "denies", "announces", "agrees"],
     enormous: ["big", "large", "huge", "gigantic", "enormous"]
 };
 
@@ -110,7 +110,7 @@ const sentences = [
 	"[things] adds [badsoft] that only [activates] on [servers]",
 	"[things] adds [badsoft] that only [activates] alongside [things]",
 	"[things] makes [people] invincible from [things] on [servers]",
-	"[people] decides to base their entire modpack on [things]",
+	"[people] decides to base their entire server on [things]",
 	"[people] tweaks balance in [things] too much, annoying [sites]",
 	"[people] tweaks balance in [things] too much, annoying [people]",
 	"[people] [says] [people] is worse than [people]",
@@ -137,7 +137,7 @@ function renderDrama(message, share) {
     <body>
         <h3>Spigot Drama Generator</h3>
         <h1>${message}</h1>
-        <h6>This website is made in jest - don't take it too seriously!<br />Inspired by (and heavily borrows from) <a href="https://github.com/asiekierka/MinecraftDramaGenerator/">asiekierka's Minecraft Drama Generator</a>.<br /><a href="/">Generate more drama!</a> <a href="${share}">(permalink)</a></h6>
+        <h6><a href="/">Generate more drama!</a> <a href="${share}">(permalink)</a><br /><br />This website is made in jest - don't take it too seriously!<br />Developed by md678685; PRs welcome on <a href="https://github.com/md678685/spigot-drama-generator">GitHub</a>.<br />Inspired by (and heavily borrows from) <a href="https://github.com/asiekierka/MinecraftDramaGenerator/">asiekierka's Minecraft Drama Generator</a>.</h6>
     </body>
 </html>
     `
