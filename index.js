@@ -125,8 +125,8 @@ const sentences = [
 	"[payment] freezes [servers]'s account because of [drama]",
 	"[payment] suspends [people]'s account because of [drama]",
 	"[payment] freezes [servers]'s account because of [drama]",
-	"[people] says [payment] is [adj]",
-	"[people] says [payment] is [worse] than [payment]",
+	"[people] [says] [payment] is [adj]",
+	"[people] [says] [payment] is [worse] than [payment]",
 ];
 
 function randomIndex(array) {
