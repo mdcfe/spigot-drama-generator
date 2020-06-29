@@ -1,15 +1,5 @@
-# 👷 `worker-template` Hello World
+# Spigot Drama Generator
 
-A template for kick starting a Cloudflare worker project.
+This generates drama around the Spigot community.
 
-[`index.js`](https://github.com/cloudflare/worker-template/blob/master/index.js) is the content of the Workers script.
-
-#### Wrangler
-
-To generate using [wrangler](https://github.com/cloudflare/wrangler)
-
-```
-wrangler generate projectname https://github.com/cloudflare/worker-template
-```
-
-Further documentation for Wrangler can be found [here](https://developers.cloudflare.com/workers/tooling/wrangler).
+Inspired by (and heavily borrows from) [asiekierka's Minecraft Drama Generator](https://github.com/asiekierka/MinecraftDramaGenerator).
