@@ -137,7 +137,7 @@ function renderDrama(message, share) {
     <body>
         <h3>Spigot Drama Generator</h3>
         <h1>${message}</h1>
-        <h6><a href="/">Generate more drama!</a> <a href="${share}">(permalink)</a></h6>
+        <h6>Inspired by (and heavily borrows from) <a href="https://github.com/asiekierka/MinecraftDramaGenerator/">asiekierka's Minecraft Drama Generator</a>.<br /><a href="/">Generate more drama!</a> <a href="${share}">(permalink)</a></h6>
     </body>
 </html>
     `
