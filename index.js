@@ -165,7 +165,8 @@ function handleDrama(url) {
     let index = 0;
     for (key in combinations) {
         const placeholder = `[${key}]`;
-        for (id in dramaIds[key]) {
+        for (id of dramaIds[key]) {
+            console.log(key, id);
             const replacement = combinations[key][id];
             console.log(id);
             message = message.replace(placeholder, replacement);
