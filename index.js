@@ -15,7 +15,8 @@ const combinations = {
     price: ["$100", "$200", "$250", "$300", "$350", "$400", "$450", "$500", "$600"],
     activates: ["activates", "works", "functions", "breaks", "disables", "eliminate", "enhances"],
     says: ["says", "tweets", "claims", "confirms", "denies", "announces", "agrees"],
-    enormous: ["big", "large", "huge", "gigantic", "enormous"]
+    enormous: ["big", "large", "huge", "gigantic", "enormous"],
+    payment: ["PayPal", "Xsolla", "Mollie", "Stripe"]
 };
 
 const sentences = [
@@ -115,7 +116,17 @@ const sentences = [
 	"[people] tweaks balance in [things] too much, annoying [people]",
 	"[people] [says] [people] is worse than [people]",
 	"[people] [says] [things] is [worse] than [things]",
-	"[people] bans [people] from [sites]"
+	"[people] bans [people] from [sites]",
+	"[payment] suspends [people]'s account",
+	"[payment] suspends [servers]'s account",
+	"[payment] freezes [people]'s account",
+	"[payment] freezes [servers]'s account",
+	"[payment] suspends [people]'s account because of [drama]",
+	"[payment] freezes [servers]'s account because of [drama]",
+	"[payment] suspends [people]'s account because of [drama]",
+	"[payment] freezes [servers]'s account because of [drama]",
+	"[people] [says] [payment] is [adj]",
+	"[people] [says] [payment] is [worse] than [payment]",
 ];
 
 function randomIndex(array) {
