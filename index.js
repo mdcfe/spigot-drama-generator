@@ -110,7 +110,7 @@ const sentences = [
 	"[things] adds [badsoft] that only [activates] on [servers]",
 	"[things] adds [badsoft] that only [activates] alongside [things]",
 	"[things] makes [people] invincible from [things] on [servers]",
-	"[people] decides to base their entire modpack on [things]",
+	"[people] decides to base their entire server on [things]",
 	"[people] tweaks balance in [things] too much, annoying [sites]",
 	"[people] tweaks balance in [things] too much, annoying [people]",
 	"[people] [says] [people] is worse than [people]",
