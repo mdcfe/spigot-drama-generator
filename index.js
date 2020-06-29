@@ -1,7 +1,7 @@
 const combinations = {
-    people: ["md_5", "Choco", "Aikar", "kashike", "electroniccat", "Z750", "LaxWasHere", "wizjany", "Me4502", "mbaxter", "Amaranth", "Tux", "andrewkm", "KHobbits", "ElgarL", "md678685", "Trent", "SupaHam", "pop4959", "JRoy", "zml", "Luck", "Proximyst", "Glare", "simpleauthority", "garbagemule", "DemonWav", "Songoda", "kangarko", "MiniDigger", "libraryaddict", "Puremin0rez", "Intelli", "KennyTV"],
+    people: ["md_5", "Choco", "Aikar", "kashike", "electroniccat", "Z750", "LaxWasHere", "wizjany", "Me4502", "mbaxter", "Amaranth", "Tux", "andrewkm", "KHobbits", "ElgarL", "md678685", "Trent", "SupaHam", "pop4959", "JRoy", "zml", "Luck", "Proximyst", "Glare", "simpleauthority", "garbagemule", "DemonWav", "Songoda", "kangarko", "MiniDigger", "libraryaddict", "Puremin0rez", "Intelli", "KennyTV", "Phoenix616"],
     sites: ["SpigotMC Forums", "Minecraft Forums", "Reddit", "/r/admincraft", "PaperMC Discord", "GitHub", "SpigotMC JIRA", "IRC", "SpigotMC Resources", "Patreon", "wiki.vg/Protocol", "Twitch", "MCMarket", "Songoda.com", "MineAcademy", "Hangar", "BukkitDev", "Ore"],
-    things: ["Paper", "Spigot", "Bungeecord", "CraftBukkit", "Fukkit", "Velocity", "EssentialsX", "GroupManager", "LuckPerms", "PermissionsEx v1", "Vault", "VanishNoPacket", "FactionsUUID", "Waterfall", "Tuinity", "Purpur", "LWC", "TreeAssist", "ChatControl", "ProtocolLib", "ViaVersion", "ViaRewind", "ViaBackwards", "ProtocolSupport", "Dynmap", "Fabric", "WorldEdit", "WorldGuard", "CraftBook", "Sponge", "SpongeForge", "SpongeVanilla", "Forge", "Mojang", "open-source plugins", "closed-source plugins", "CMI", "Genders", "EpicGenders", "MobArena", "Hangar", "the Bukkit API", "TruAntiLag", "MiniMessage", "MineDown", "mcMMO", "Lib's Disguises", "CoreProtect", "Prism", "LogBlock", "NuVotifier", "Votifier", "Ore"],
+    things: ["Paper", "Spigot", "Bungeecord", "CraftBukkit", "Fukkit", "Velocity", "EssentialsX", "GroupManager", "LuckPerms", "PermissionsEx v1", "Vault", "VanishNoPacket", "FactionsUUID", "Waterfall", "Tuinity", "Purpur", "LWC", "TreeAssist", "ChatControl", "ProtocolLib", "ViaVersion", "ViaRewind", "ViaBackwards", "ProtocolSupport", "Dynmap", "Fabric", "WorldEdit", "WorldGuard", "CraftBook", "Sponge", "SpongeForge", "SpongeVanilla", "Forge", "Mojang", "open-source plugins", "closed-source plugins", "CMI", "Genders", "EpicGenders", "MobArena", "Hangar", "the Bukkit API", "TruAntiLag", "MiniMessage", "MineDown", "mcMMO", "Lib's Disguises", "CoreProtect", "Prism", "LogBlock", "NuVotifier", "Votifier", "Ore", "ChestShop"],
     servers: ["Empire Minecraft", "Mineplex", "2b2t", "SpigotCraft", "EcoCityCraft", "Minehut", "Hypixel", "Dyescape", "Mineteria", "CubeCraft"],
     function: ["1.8 support", "mod support", "1.7.10 support", "1.8 combat", "chat formatting", "Velocity support", "Bungeecord support", "Sponge support", "Forge compatibility", "async teleportation", "/kittycannon", "/beezooka", "Paper exclusivity", "PaperLib.suggestPaper()", "dupe fixes", "economy", "RGB support", "realism", "new player capes", "more drama", "less drama", "drama generation commands", "custom enchantments", "overpowered items", "underpowered items", "achievements", "quests", "more annoying worldgen"],
     adj: ["bad", "wrong", "illegal", "horrible", "nasty", "not in ForgeCraft", "noncompliant with Mojang's EULA", "a serious problem", "incompatible", "a waste of time", "wonderful", "amazing", "toxic", "too vanilla", "shameful", "disappointing", "bloated", "outdated", "incorrect", "full of drama", "too realistic", "terrible"],
@@ -118,6 +118,8 @@ const sentences = [
 	"[people] bans [people] from [sites]"
 ];
 
+const jsonpack = require('jsonpack/main');
+
 function randomIndex(array) {
     return Math.floor(Math.random() * array.length);
 }
@@ -151,15 +153,21 @@ function handleRoot(url) {
     for (key in combinations) {
         drama[key] = [randomIndex(combinations[key]), randomIndex(combinations[key]), randomIndex(combinations[key]), randomIndex(combinations[key])];
     }
-    
-    const dramaUrl = btoa(JSON.stringify(drama));
+
+    const dramaUrl = btoa("p:" + jsonpack.pack(drama));
     const host = url.host == "example.com" ? "localhost:8787" : url.host;
 
     return handleDrama(new URL(`https://${host}/${dramaUrl}`));
 }
 
 function handleDrama(url) {
-    let dramaIds = JSON.parse(atob(url.pathname.split("/")[1]));
+    let encoded = atob(url.pathname.split("/")[1]);
+    let dramaIds;
+    if (encoded.startsWith("p:")) {
+        dramaIds = jsonpack.unpack(encoded.substr(2));
+    } else {
+        dramaIds = JSON.parse(encoded);
+    }
     let message = sentences[dramaIds.sentence];
 
     let index = 0;
