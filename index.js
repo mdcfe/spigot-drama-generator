@@ -174,22 +174,38 @@ function handleRoot(url) {
 }
 
 function handleDrama(url) {
-    let dramaIds = JSON.parse(atob(url.pathname.split("/")[1]));
+	let dramaIds = JSON.parse(atob(url.pathname.split("/")[1]));
+	let usedDramaIds = {
+		sentence: dramaIds.sentence,
+	};
     let message = sentences[dramaIds.sentence];
 
     let index = 0;
     for (key in combinations) {
-        const placeholder = `[${key}]`;
+		const placeholder = `[${key}]`;
+		if (!message.includes(placeholder)) continue;
+		usedDramaIds[key] = [];
         for (id of dramaIds[key]) {
+			if (!message.includes(placeholder)) continue;
+			usedDramaIds[key].push(id);
+
             const replacement = combinations[key][id];
             message = message.replace(placeholder, replacement);
         }
-    }
+	}
+	
+	url.pathname = "/" + btoa(JSON.stringify(usedDramaIds));
 
     return new Response(renderDrama(message, url.href), {
         headers: {
             "content-type": "text/html;charset=utf8"
         }
+    });
+}
+
+function handle404() {
+    return new Response("no u", {
+        status: "404"
     });
 }
 
@@ -204,11 +220,9 @@ async function handleRequest(request) {
     let url = new URL(request.url);
     if (url.pathname == "/") {
         return handleRoot(url);
-    } else {
+    } else if (url.pathname == "/favicon.ico") {
+		return handle404();
+	} else {
         return handleDrama(url);
     }
-
-    return new Response('Hello worker!', {
-        headers: { 'content-type': 'text/plain' },
-    });
 }
