@@ -1,22 +1,22 @@
 const combinations = {
-    people: ["md_5", "Choco", "Aikar", "kashike", "electroniccat", "Z750", "LaxWasHere", "wizjany", "Me4502", "mbaxter", "Amaranth", "Tux", "andrewkm", "KHobbits", "ElgarL", "md678685", "Trent", "SupaHam", "pop4959", "JRoy", "zml", "Luck", "Proximyst", "Glare", "simpleauthority", "garbagemule", "DemonWav", "Songoda", "kangarko", "MiniDigger", "libraryaddict", "Puremin0rez", "Intelli", "KennyTV", "mikroskeem", "nossr50", "BtoBastian", "Proxymist", "Citymonstret", "Turbotailz", "Larry", "Nick"],
-    sites: ["SpigotMC Forums", "Minecraft Forums", "Reddit", "/r/admincraft", "PaperMC Discord", "GitHub", "SpigotMC JIRA", "IRC", "SpigotMC Resources", "Patreon", "wiki.vg/Protocol", "Twitch", "MCMarket", "Songoda.com", "MineAcademy", "Hangar", "BukkitDev", "Ore", "bStats"],
-    things: ["Paper", "Spigot", "Bungeecord", "CraftBukkit", "Fukkit", "Velocity", "EssentialsX", "GroupManager", "LuckPerms", "PermissionsEx v1", "Vault", "VanishNoPacket", "FactionsUUID", "Waterfall", "Tuinity", "Purpur", "LWC", "TreeAssist", "ChatControl", "ProtocolLib", "ViaVersion", "ViaRewind", "ViaBackwards", "ProtocolSupport", "Dynmap", "Fabric", "WorldEdit", "WorldGuard", "CraftBook", "Sponge", "SpongeForge", "SpongeVanilla", "Forge", "Mojang", "open-source plugins", "closed-source plugins", "CMI", "Genders", "EpicGenders", "MobArena", "Hangar", "the Bukkit API", "TruAntiLag", "MiniMessage", "MineDown", "mcMMO", "Lib's Disguises", "CoreProtect", "Prism", "LogBlock", "NuVotifier", "Votifier", "Ore", "bStats", "kyori/text", "kyori/adventure", "RotatoR", "LuckPerms Web Editor", "Chester", "EngineHub"],
-    servers: ["Empire Minecraft", "Mineplex", "2b2t", "SpigotCraft", "EcoCityCraft", "Minehut", "Hypixel", "Dyescape", "Mineteria", "CubeCraft"],
-    function: ["1.8 support", "mod support", "1.7.10 support", "1.8 combat", "chat formatting", "Velocity support", "Bungeecord support", "Sponge support", "Forge compatibility", "async teleportation", "/kittycannon", "/beezooka", "Paper exclusivity", "PaperLib.suggestPaper()", "dupe fixes", "economy", "RGB support", "realism", "new player capes", "more drama", "less drama", "drama generation commands", "custom enchantments", "overpowered items", "underpowered items", "achievements", "quests", "more annoying worldgen", "legacy color codes", "spigot bugs"],
-    adj: ["bad", "wrong", "illegal", "horrible", "nasty", "not in ForgeCraft", "noncompliant with Mojang's EULA", "a serious problem", "incompatible", "a waste of time", "wonderful", "amazing", "toxic", "too vanilla", "shameful", "disappointing", "bloated", "outdated", "incorrect", "full of drama", "too realistic", "terrible"],
-    badsoft: ["malware", "spyware", "adware", "DRM", "viruses", "trojans", "keyloggers", "stolen code", "easter eggs", "potential login stealers", "adf.ly links", "bad code", "stolen assets", "malicious code", "secret backdoors", "kangarko/Foundation", "obfuscation", "Songoda plugins"],
-    drama: ["bugs", "crashes", "drama", "lots of drama", "imbalance", "pain and suffering", "piracy", "bees", "adf.ly", "dupe glitches", "lighting bugs"],
-    crash: ["crash", "explode", "break", "lag", "blow up", "corrupt chunks", "corrupt worlds", "rain hellfish", "spawn bees", "drop /nuke"],
-    ban: ["ban", "kick", "put a pumpkin of shame on", "add commands mocking", "blacklist", "whitelist", "give admin rights to", "shame", "destroy"],
-    code: ["code", "assets", "ideas", "concepts", "a single function", "5 lines of code", "a class", "a few files", "a ZIP file", "Gradle buildscripts", "a GitHub repository"],
-    worse: ["worse", "better", "faster", "slower", "more stable", "less buggy"],
-    ac1: ["sue", "destroy the life of", "flame", "cause drama about", "complain about", "kick", "threaten to sue", "wave empty threats of lawsuits at", "DMCA", "yell about in IRC", "randomly pings", "decompile"],
-    price: ["$100", "$200", "$250", "$300", "$350", "$400", "$450", "$500", "$600", "$1,000,000"],
-    activates: ["activates", "works", "functions", "breaks", "disables", "eliminate", "enhances"],
-    says: ["says", "tweets", "claims", "confirms", "denies", "announces", "agrees", "spams"],
-    enormous: ["big", "large", "huge", "gigantic", "enormous"],
-    payment: ["PayPal", "Xsolla", "Mollie", "Stripe"]
+    people: ["md_5", "Choco", "Aikar", "kashike", "electroniccat", "Z750", "LaxWasHere", "wizjany", "Me4502", "mbaxter", "Amaranth", "Tux", "andrewkm", "KHobbits", "ElgarL", "md678685", "Trent", "SupaHam", "pop4959", "JRoy", "zml", "Luck", "Proximyst", "Glare", "simpleauthority", "garbagemule", "DemonWav", "Songoda", "kangarko", "MiniDigger", "libraryaddict", "Puremin0rez", "Intelli", "KennyTV", "mikroskeem", "nossr50", "BtoBastian", "Proxymist", "Citymonstret", "Turbotailz", "Larry", "Phoenix616", "Spottedleaf", "stefvanschie", "Byteflux", "Camm", "BillyGalbreath", "vk2gpz", "bloodmc", "gabizou", "Nick"],
+    sites: ["SpigotMC Forums", "Minecraft Forums", "Reddit", "/r/admincraft", "PaperMC Discord", "GitHub", "SpigotMC JIRA", "IRC", "SpigotMC Resources", "Patreon", "wiki.vg/Protocol", "Twitch", "MCMarket", "Songoda.com", "MineAcademy", "Hangar", "BukkitDev", "Ore", "bStats", "SpigotMC IRC", "EsperNet", "MOSS Discord", "EssentialsX issue tracker", "Sponge Forums"],
+    things: ["Paper", "Spigot", "Bungeecord", "CraftBukkit", "Fukkit", "Velocity", "EssentialsX", "GroupManager", "LuckPerms", "PermissionsEx v1", "Vault", "VanishNoPacket", "FactionsUUID", "Waterfall", "Tuinity", "Purpur", "LWC", "TreeAssist", "ChatControl", "ProtocolLib", "ViaVersion", "ViaRewind", "ViaBackwards", "ProtocolSupport", "Dynmap", "Fabric", "WorldEdit", "WorldGuard", "CraftBook", "Sponge", "SpongeForge", "SpongeVanilla", "Forge", "Mojang", "open-source plugins", "closed-source plugins", "CMI", "Genders", "EpicGenders", "MobArena", "Hangar", "the Bukkit API", "TruAntiLag", "MiniMessage", "MineDown", "mcMMO", "Lib's Disguises", "CoreProtect", "Prism", "LogBlock", "NuVotifier", "Votifier", "Ore", "bStats", "kyori/text", "kyori/adventure", "RotatoR", "LuckPerms Web Editor", "Chester", "EngineHub", "ChestShop", "Nucleus", "Skript", "Denizen", "Helper", "spark", "Towny", "FastAsyncWorldEdit", "PlotSquared", "Multiverse", "GriefPrevention", "GriefDefender", "Travertine", "ACF", "Brigadier", "Citizens"],
+    servers: ["Empire Minecraft", "Mineplex", "2b2t", "SpigotCraft", "EcoCityCraft", "Minehut", "Hypixel", "Dyescape", "Mineteria", "CubeCraft", "The Hive", "Realms"],
+    function: ["1.8 support", "mod support", "1.7.10 support", "1.8 combat", "chat formatting", "Velocity support", "Bungeecord support", "Sponge support", "Forge compatibility", "async teleportation", "/kittycannon", "/beezooka", "Paper exclusivity", "PaperLib.suggestPaper()", "dupe fixes", "economy", "RGB support", "realism", "new player capes", "more drama", "less drama", "drama generation commands", "custom enchantments", "overpowered items", "underpowered items", "achievements", "quests", "more annoying worldgen", "legacy color codes", "spigot bugs", "datapacks", "automated wizjany pinging", "improved API", "GPL compliance", "overpowered commands", "underpowered commands", "anti-cheat", "mixins", "patches", "MCP mappings", "Yarn mappings", "Mojang mappings", "Brigadier support", "hover events", "click events", "the MIT license"],
+    adj: ["bad", "wrong", "illegal", "horrible", "nasty", "not in SpigotCraft", "noncompliant with Mojang's EULA", "a serious problem", "incompatible", "a waste of time", "wonderful", "amazing", "toxic", "too vanilla", "shameful", "disappointing", "bloated", "outdated", "incorrect", "full of drama", "too realistic", "terrible", "not GPL compliant"],
+    badsoft: ["malware", "spyware", "adware", "DRM", "viruses", "trojans", "keyloggers", "stolen code", "easter eggs", "potential login stealers", "adf.ly links", "bad code", "stolen assets", "malicious code", "secret backdoors", "kangarko/Foundation", "obfuscation", "Songoda plugins", "ransomware", "remote code execution", "precompiled Spigot binaries", "force ops"],
+    drama: ["bugs", "crashes", "drama", "lots of drama", "imbalance", "pain and suffering", "piracy", "bees", "adf.ly", "dupe glitches", "lighting bugs", "obfuscation", "hack clients", "premium plugins"],
+    crash: ["crash", "explode", "break", "lag", "blow up", "corrupt chunks", "corrupt worlds", "rain hellfish", "spawn bees", "drop /nuke", "hold servers ransom"],
+    ban: ["ban", "kick", "put a pumpkin of shame on", "add commands mocking", "blacklist", "whitelist", "give admin rights to", "shame", "destroy", "/nuke", "\"no u\"s"],
+    code: ["code", "assets", "ideas", "concepts", "a single function", "5 lines of code", "a class", "a few files", "a ZIP file", "Gradle buildscripts", "a GitHub repository", "a pom.xml", "obfuscated class files"],
+    worse: ["worse", "better", "faster", "slower", "more stable", "less buggy", "more functional", "more vanilla", "less vanilla", "more buggy", "more broken"],
+    ac1: ["sue", "destroy the life of", "flame", "cause drama about", "complain about", "kick", "threaten to sue", "wave empty threats of lawsuits at", "DMCA", "yell about in IRC", "randomly ping", "decompile", "enforce the GPL against", "insult the code of", "rant about"],
+    price: ["$100", "$200", "$250", "$300", "$350", "$400", "$450", "$500", "$600", "$1,000,000", "$15", "$5", "€100", "€250"],
+    activates: ["activates", "works", "functions", "breaks", "disables", "eliminates", "enhances", "corrupts", "deletes"],
+    says: ["says", "tweets", "claims", "confirms", "denies", "announces", "agrees", "spams", "declares", "pings @everyone to announce", "rants", "locks the SpigotMC Discord for a two hour long monologue because"],
+    enormous: ["big", "large", "huge", "gigantic", "enormous", "colossal", "Hypixel-sized"],
+    payment: ["PayPal", "Xsolla", "Mollie", "Stripe", "Patreon", "Open Collective", "Ko-fi", "Tebex"]
 };
 
 const sentences = [
@@ -45,7 +45,7 @@ const sentences = [
 	"[things] is not updated for the latest version of Minecraft.",
 	"[people] removes [things] from [servers].",
 	"[people] adds [things] to [servers].",
-	"[people] quits modding. Fans of [things] rage.",
+	"[people] quits plugin development. Fans of [things] rage.",
 	"[people] is found to secretly like [things]",
 	"[people] openly hates [function] in [things]",
 	"[people] threatens to [ac1] [people] until they remove [things] from [servers]",
@@ -83,7 +83,7 @@ const sentences = [
 	"[people] [says] [things] causes [drama] when used with [things]",
 	"[people] [says] using [things] and [things] together is [adj]",
 	"[people] rants about [things] on [sites]",
-	"[people] rants about [function] in mods on [sites]",
+	"[people] rants about [function] in plugins on [sites]",
 	"[people] steals code from [things]",
 	"[things] breaks [function]",
 	"[people] sues [things] developers",
@@ -122,11 +122,13 @@ const sentences = [
 	"[payment] freezes [people]'s account",
 	"[payment] freezes [servers]'s account",
 	"[payment] suspends [people]'s account because of [drama]",
-	"[payment] freezes [servers]'s account because of [drama]",
-	"[payment] suspends [people]'s account because of [drama]",
+	"[payment] suspends [servers]'s account because of [drama]",
+	"[payment] freezes [people]'s account because of [drama]",
 	"[payment] freezes [servers]'s account because of [drama]",
 	"[people] [says] [payment] is [adj]",
 	"[people] [says] [payment] is [worse] than [payment]",
+	"[people] decides to rewrite [things] to be more like [things]",
+	"[people] decides to rewrite [things] to be less like [things]",
 ];
 
 function randomIndex(array) {
@@ -136,13 +138,16 @@ function randomIndex(array) {
 function renderDrama(message, share) {
     return `
 <html>
-    <head>
-        <title>Spigot Drama Generator</title>
+	<head>
+		<title>Spigot Drama Generator</title>
+		<meta name="description" content="${message}" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="data:,">
         <style>
             body {
                 font-family: sans-serif;
                 text-align: center;
-            }
+			}
         </style>
     </head>
     <body>
@@ -170,24 +175,35 @@ function handleRoot(url) {
 }
 
 function handleDrama(url) {
-    let dramaIds = JSON.parse(atob(url.pathname.split("/")[1]));
+	let dramaIds = JSON.parse(atob(url.pathname.split("/")[1]));
+	let usedDramaIds = { sentence: dramaIds.sentence };
     let message = sentences[dramaIds.sentence];
 
-    let index = 0;
     for (key in combinations) {
-        const placeholder = `[${key}]`;
+		const placeholder = `[${key}]`;
+		if (!message.includes(placeholder)) continue;
+		usedDramaIds[key] = [];
         for (id of dramaIds[key]) {
-            console.log(key, id);
+			if (!message.includes(placeholder)) continue;
+			usedDramaIds[key].push(id);
+
             const replacement = combinations[key][id];
-            console.log(id);
             message = message.replace(placeholder, replacement);
         }
-    }
+	}
+	
+	url.pathname = "/" + btoa(JSON.stringify(usedDramaIds));
 
     return new Response(renderDrama(message, url.href), {
         headers: {
             "content-type": "text/html;charset=utf8"
         }
+    });
+}
+
+function handle404() {
+    return new Response("no u", {
+        status: "404"
     });
 }
 
@@ -202,11 +218,9 @@ async function handleRequest(request) {
     let url = new URL(request.url);
     if (url.pathname == "/") {
         return handleRoot(url);
-    } else {
+    } else if (url.pathname == "/favicon.ico") {
+		return handle404();
+	} else {
         return handleDrama(url);
     }
-
-    return new Response('Hello worker!', {
-        headers: { 'content-type': 'text/plain' },
-    });
 }
