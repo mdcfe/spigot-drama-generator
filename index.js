@@ -13,7 +13,7 @@ const combinations = {
     worse: ["worse", "better", "faster", "slower", "more stable", "less buggy", "more functional", "more vanilla", "less vanilla", "more buggy", "more broken"],
     ac1: ["sue", "destroy the life of", "flame", "cause drama about", "complain about", "kick", "threaten to sue", "wave empty threats of lawsuits at", "DMCA", "yell about in IRC", "randomly ping", "decompile", "enforce the GPL against", "insult the code of", "rant about"],
     price: ["$100", "$200", "$250", "$300", "$350", "$400", "$450", "$500", "$600", "$1,000,000", "$15", "$5", "€100", "€250"],
-    activates: ["activates", "works", "functions", "breaks", "disables", "eliminate", "enhances", "corrupts", "deletes"],
+    activates: ["activates", "works", "functions", "breaks", "disables", "eliminates", "enhances", "corrupts", "deletes"],
     says: ["says", "tweets", "claims", "confirms", "denies", "announces", "agrees", "spams", "declares", "pings @everyone to announce", "rants", "locks the SpigotMC Discord for a two hour long monologue because"],
     enormous: ["big", "large", "huge", "gigantic", "enormous", "colossal", "Hypixel-sized"],
     payment: ["PayPal", "Xsolla", "Mollie", "Stripe", "Patreon", "Open Collective", "Ko-fi", "Tebex"]
