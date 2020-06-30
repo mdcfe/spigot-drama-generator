@@ -175,12 +175,9 @@ function handleRoot(url) {
 
 function handleDrama(url) {
 	let dramaIds = JSON.parse(atob(url.pathname.split("/")[1]));
-	let usedDramaIds = {
-		sentence: dramaIds.sentence,
-	};
+	let usedDramaIds = { sentence: dramaIds.sentence };
     let message = sentences[dramaIds.sentence];
 
-    let index = 0;
     for (key in combinations) {
 		const placeholder = `[${key}]`;
 		if (!message.includes(placeholder)) continue;
