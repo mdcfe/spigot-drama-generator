@@ -142,11 +142,12 @@ function renderDrama(message, share) {
 		<title>Spigot Drama Generator</title>
 		<meta name="description" content="${message}" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="data:,">
         <style>
             body {
                 font-family: sans-serif;
                 text-align: center;
-            }
+			}
         </style>
     </head>
     <body>
