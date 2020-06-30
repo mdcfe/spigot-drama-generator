@@ -21,114 +21,114 @@ const combinations = {
 
 const sentences = [
     "[people] launched a DoS attack on the website of [things]",
-	"[sites] urges everyone to stop using [things]",
-	"After a [enormous] amount of requests, [servers] removes [things]",
-	"After a [enormous] amount of requests, [servers] adds [things]",
-	"After a [enormous] amount of requests, [servers] adds [function] to [things]",
-	"[people] plays [things] on Twitch",
-	"[people] fixes [function] in [things] to be unlike [things]",
-	"[things] makes [things] [crash], [sites] users complain",
-	"[people] complained about being in [things] on [sites]",
-	"[people] releases [code] of [things] for [price]",
-	"[sites] considers [things] worse than [things]",
-	"[people] made [things] depend on [things]",
-	"[people] bans [people] from using [things] on [servers]",
-	"[people] complains that [things] discussion doesn't belong on [sites]",
-	"[people] has a Patreon goal to add [function] to [things] for [price] a month",
-	"[people] has a Patreon goal to add [things] compatibility to [things] for [price] a month",
-	"[people] complains that [people] replaced [things] by [things]",
-	"[people] complains that [people] replaced [things] by [things] on [servers]",
-	"[people] complains that [people] removed [function] on [servers]",
-	"[people] decided that [things] is too [adj] and replaced it with [things]",
-	"[people] [says] [things] is [adj].",
-	"[people] [says] [things] is literally [adj].",
-	"[things] is not updated for the latest version of Minecraft.",
-	"[people] removes [things] from [servers].",
-	"[people] adds [things] to [servers].",
-	"[people] quits plugin development. Fans of [things] rage.",
-	"[people] is found to secretly like [things]",
-	"[people] openly hates [function] in [things]",
-	"[people] threatens to [ac1] [people] until they remove [things] from [servers]",
-	"[people] threatens to [ac1] [people] until they remove [function] from [things]",
-	"[people] threatens to [ac1] [people] until they add [function] to [things]",
-	"[people] came out in support of [things]",
-	"[people] came out in support of [drama]",
-	"[people] and [people] came out in support of [drama]",
-	"[people] came out against [drama], [sites] rages",
-	"[people] and [people] came out against [drama], [sites] rages",
-	"[people] forks [things] causing [drama]",
-	"[people] [says] to replace [things] with [things]",
-	"[people] [says] [people] causes drama",
-	"[things] fans claim that [things] should be more like [things]",
-	"[things] fans claim that [things] should have better [function]",
-	"[people] [says] that [things] should be more like [things]",
-	"[people] [says] that [things] should be less like [things]",
-	"[people] rebalances [things] for [servers]",
-	"[people] adds [function] to [things] by request of [people]",
-	"[people] removes [function] from [things] by request of [people]",
-	"[people] removes compatibility between [things] and [things] by request of [people]",
-	"[people] [says] [people]'s attitude is [adj]",
-	"[people] [says] [sites]'s attitude is [adj]",
-	"[people] quits the development team of [things]",
-	"[people] [says] [things] is too much like [things]",
-	"[people] [says] [things] is a ripoff of [things]",
-	"[people] [says] [people] stole [code] from [people]",
-	"[people] [says] [people] did not steal [code] from [people]",
-	"[people] decides to [ban] [people] from [servers]",
-	"[things] doesn't work with [things] since the latest update",
-	"[people] sues [things]",
-	"[people] [says] [things] is [adj] on [sites]",
-	"[people] [says] [things] is full of [badsoft]",
-	"[people] [says] [things] causes [drama]",
-	"[people] [says] [things] causes [drama] when used with [things]",
-	"[people] [says] using [things] and [things] together is [adj]",
-	"[people] rants about [things] on [sites]",
-	"[people] rants about [function] in plugins on [sites]",
-	"[people] steals code from [things]",
-	"[things] breaks [function]",
-	"[people] sues [things] developers",
-	"[people] reminds you that [things] is [adj]",
-	"[people] and [people] get into a drama fight on [sites]",
-	"Fans of [things] and [things] argue on [sites]",
-	"[people] and [people] argue about [things]",
-	"[people] puts [badsoft] in [things]",
-	"[people] complains about [things] breaking [things]",
-	"[people] complains about [things] breaking [function]",
-	"[people] complains about [things] including [function]",
-	"[things] breaks [function] in [things]",
-	"[things] breaks [things] support in [things]",
-	"[things] adds code to [ban] [people] automatically",
-	"[things] adds code to [ban] people using [things]",
-	"[things] removes compatibility with [things]",
-	"[people] [says] not to use [things]",
-	"[people] [says] not to use [things] with [things]",
-	"[people] finds [badsoft] in [things]",
-	"[people] drew a nasty graffiti about [people]",
-	"[people] drew a nasty graffiti about [things]",
-	"[things] makes [things] [crash] when used with [things]",
-	"[things] makes [things] [crash] when used by [people]",
-	"[things] makes [things] crash [things] when used by [people]",
-	"[things] adds [badsoft] that only [activates] on [servers]",
-	"[things] adds [badsoft] that only [activates] alongside [things]",
-	"[things] makes [people] invincible from [things] on [servers]",
-	"[people] decides to base their entire server on [things]",
-	"[people] tweaks balance in [things] too much, annoying [sites]",
-	"[people] tweaks balance in [things] too much, annoying [people]",
-	"[people] [says] [people] is worse than [people]",
-	"[people] [says] [things] is [worse] than [things]",
-	"[people] bans [people] from [sites]",
-	"[payment] suspends [people]'s account",
-	"[payment] suspends [servers]'s account",
-	"[payment] freezes [people]'s account",
-	"[payment] freezes [servers]'s account",
-	"[payment] suspends [people]'s account because of [drama]",
-	"[payment] suspends [servers]'s account because of [drama]",
-	"[payment] freezes [people]'s account because of [drama]",
-	"[payment] freezes [servers]'s account because of [drama]",
-	"[people] [says] [payment] is [adj]",
-	"[people] [says] [payment] is [worse] than [payment]",
-	"[people] decides to rewrite [things] to be more like [things]",
-	"[people] decides to rewrite [things] to be less like [things]",
+    "[sites] urges everyone to stop using [things]",
+    "After a [enormous] amount of requests, [servers] removes [things]",
+    "After a [enormous] amount of requests, [servers] adds [things]",
+    "After a [enormous] amount of requests, [servers] adds [function] to [things]",
+    "[people] plays [things] on Twitch",
+    "[people] fixes [function] in [things] to be unlike [things]",
+    "[things] makes [things] [crash], [sites] users complain",
+    "[people] complained about being in [things] on [sites]",
+    "[people] releases [code] of [things] for [price]",
+    "[sites] considers [things] worse than [things]",
+    "[people] made [things] depend on [things]",
+    "[people] bans [people] from using [things] on [servers]",
+    "[people] complains that [things] discussion doesn't belong on [sites]",
+    "[people] has a Patreon goal to add [function] to [things] for [price] a month",
+    "[people] has a Patreon goal to add [things] compatibility to [things] for [price] a month",
+    "[people] complains that [people] replaced [things] by [things]",
+    "[people] complains that [people] replaced [things] by [things] on [servers]",
+    "[people] complains that [people] removed [function] on [servers]",
+    "[people] decided that [things] is too [adj] and replaced it with [things]",
+    "[people] [says] [things] is [adj].",
+    "[people] [says] [things] is literally [adj].",
+    "[things] is not updated for the latest version of Minecraft.",
+    "[people] removes [things] from [servers].",
+    "[people] adds [things] to [servers].",
+    "[people] quits plugin development. Fans of [things] rage.",
+    "[people] is found to secretly like [things]",
+    "[people] openly hates [function] in [things]",
+    "[people] threatens to [ac1] [people] until they remove [things] from [servers]",
+    "[people] threatens to [ac1] [people] until they remove [function] from [things]",
+    "[people] threatens to [ac1] [people] until they add [function] to [things]",
+    "[people] came out in support of [things]",
+    "[people] came out in support of [drama]",
+    "[people] and [people] came out in support of [drama]",
+    "[people] came out against [drama], [sites] rages",
+    "[people] and [people] came out against [drama], [sites] rages",
+    "[people] forks [things] causing [drama]",
+    "[people] [says] to replace [things] with [things]",
+    "[people] [says] [people] causes drama",
+    "[things] fans claim that [things] should be more like [things]",
+    "[things] fans claim that [things] should have better [function]",
+    "[people] [says] that [things] should be more like [things]",
+    "[people] [says] that [things] should be less like [things]",
+    "[people] rebalances [things] for [servers]",
+    "[people] adds [function] to [things] by request of [people]",
+    "[people] removes [function] from [things] by request of [people]",
+    "[people] removes compatibility between [things] and [things] by request of [people]",
+    "[people] [says] [people]'s attitude is [adj]",
+    "[people] [says] [sites]'s attitude is [adj]",
+    "[people] quits the development team of [things]",
+    "[people] [says] [things] is too much like [things]",
+    "[people] [says] [things] is a ripoff of [things]",
+    "[people] [says] [people] stole [code] from [people]",
+    "[people] [says] [people] did not steal [code] from [people]",
+    "[people] decides to [ban] [people] from [servers]",
+    "[things] doesn't work with [things] since the latest update",
+    "[people] sues [things]",
+    "[people] [says] [things] is [adj] on [sites]",
+    "[people] [says] [things] is full of [badsoft]",
+    "[people] [says] [things] causes [drama]",
+    "[people] [says] [things] causes [drama] when used with [things]",
+    "[people] [says] using [things] and [things] together is [adj]",
+    "[people] rants about [things] on [sites]",
+    "[people] rants about [function] in plugins on [sites]",
+    "[people] steals code from [things]",
+    "[things] breaks [function]",
+    "[people] sues [things] developers",
+    "[people] reminds you that [things] is [adj]",
+    "[people] and [people] get into a drama fight on [sites]",
+    "Fans of [things] and [things] argue on [sites]",
+    "[people] and [people] argue about [things]",
+    "[people] puts [badsoft] in [things]",
+    "[people] complains about [things] breaking [things]",
+    "[people] complains about [things] breaking [function]",
+    "[people] complains about [things] including [function]",
+    "[things] breaks [function] in [things]",
+    "[things] breaks [things] support in [things]",
+    "[things] adds code to [ban] [people] automatically",
+    "[things] adds code to [ban] people using [things]",
+    "[things] removes compatibility with [things]",
+    "[people] [says] not to use [things]",
+    "[people] [says] not to use [things] with [things]",
+    "[people] finds [badsoft] in [things]",
+    "[people] drew a nasty graffiti about [people]",
+    "[people] drew a nasty graffiti about [things]",
+    "[things] makes [things] [crash] when used with [things]",
+    "[things] makes [things] [crash] when used by [people]",
+    "[things] makes [things] crash [things] when used by [people]",
+    "[things] adds [badsoft] that only [activates] on [servers]",
+    "[things] adds [badsoft] that only [activates] alongside [things]",
+    "[things] makes [people] invincible from [things] on [servers]",
+    "[people] decides to base their entire server on [things]",
+    "[people] tweaks balance in [things] too much, annoying [sites]",
+    "[people] tweaks balance in [things] too much, annoying [people]",
+    "[people] [says] [people] is worse than [people]",
+    "[people] [says] [things] is [worse] than [things]",
+    "[people] bans [people] from [sites]",
+    "[payment] suspends [people]'s account",
+    "[payment] suspends [servers]'s account",
+    "[payment] freezes [people]'s account",
+    "[payment] freezes [servers]'s account",
+    "[payment] suspends [people]'s account because of [drama]",
+    "[payment] suspends [servers]'s account because of [drama]",
+    "[payment] freezes [people]'s account because of [drama]",
+    "[payment] freezes [servers]'s account because of [drama]",
+    "[people] [says] [payment] is [adj]",
+    "[people] [says] [payment] is [worse] than [payment]",
+    "[people] decides to rewrite [things] to be more like [things]",
+    "[people] decides to rewrite [things] to be less like [things]",
 ];
 
 function randomIndex(array) {
@@ -138,16 +138,16 @@ function randomIndex(array) {
 function renderDrama(message, share) {
     return `
 <html>
-	<head>
-		<title>Spigot Drama Generator</title>
-		<meta name="description" content="${message}" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="icon" href="data:,">
+    <head>
+        <title>Spigot Drama Generator</title>
+        <meta name="description" content="${message}" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="data:,">
         <style>
             body {
                 font-family: sans-serif;
                 text-align: center;
-			}
+            }
         </style>
     </head>
     <body>
@@ -175,24 +175,24 @@ function handleRoot(url) {
 }
 
 function handleDrama(url) {
-	let dramaIds = JSON.parse(atob(url.pathname.split("/")[1]));
-	let usedDramaIds = { sentence: dramaIds.sentence };
+    let dramaIds = JSON.parse(atob(url.pathname.split("/")[1]));
+    let usedDramaIds = { sentence: dramaIds.sentence };
     let message = sentences[dramaIds.sentence];
 
     for (key in combinations) {
-		const placeholder = `[${key}]`;
-		if (!message.includes(placeholder)) continue;
-		usedDramaIds[key] = [];
+        const placeholder = `[${key}]`;
+        if (!message.includes(placeholder)) continue;
+        usedDramaIds[key] = [];
         for (id of dramaIds[key]) {
-			if (!message.includes(placeholder)) continue;
-			usedDramaIds[key].push(id);
+            if (!message.includes(placeholder)) continue;
+            usedDramaIds[key].push(id);
 
             const replacement = combinations[key][id];
             message = message.replace(placeholder, replacement);
         }
-	}
-	
-	url.pathname = "/" + btoa(JSON.stringify(usedDramaIds));
+    }
+    
+    url.pathname = "/" + btoa(JSON.stringify(usedDramaIds));
 
     return new Response(renderDrama(message, url.href), {
         headers: {
@@ -219,8 +219,8 @@ async function handleRequest(request) {
     if (url.pathname == "/") {
         return handleRoot(url);
     } else if (url.pathname == "/favicon.ico") {
-		return handle404();
-	} else {
+        return handle404();
+    } else {
         return handleDrama(url);
     }
 }
