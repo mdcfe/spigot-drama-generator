@@ -153,20 +153,26 @@ function renderDrama(message, share) {
     <body>
         <h3>Spigot Drama Generator</h3>
         <h1>${message}</h1>
-        <h6><a href="/">Generate more drama!</a> <a href="${share}">(permalink)</a><br /><br />This website is made in jest - don't take it too seriously!<br />Developed by md678685; PRs welcome on <a href="https://github.com/md678685/spigot-drama-generator">GitHub</a>.<br />Inspired by (and heavily borrows from) <a href="https://github.com/asiekierka/MinecraftDramaGenerator/">asiekierka's Minecraft Drama Generator</a>.</h6>
+        <h6><a href="/">Generate more drama!</a> <a href="${share}">(permalink)</a><br /><br />This website is made in jest - don't take it too seriously!<br />Developed by md678685; PRs welcome on <a href="https://github.com/md678685/spigot-drama-generator">GitHub</a>.<br />Inspired by (and heavily borrows from) <a href="https://github.com/asiekierka/MinecraftDramaGenerator/">asiekierka's Minecraft Drama Generator</a>.<br /><a href="/api/generate">JSON API</a> for developers</h6>
     </body>
 </html>
     `
 }
 
-function handleRoot(url) {
-    let drama = {};
+function generateRandomDrama() {
+	let drama = {};
 
     drama.sentence = randomIndex(sentences);
 
     for (key in combinations) {
         drama[key] = [randomIndex(combinations[key]), randomIndex(combinations[key]), randomIndex(combinations[key]), randomIndex(combinations[key])];
-    }
+	}
+	
+	return drama;
+}
+
+function handleRoot(url) {
+    const drama = generateRandomDrama();
     
     const dramaUrl = btoa(JSON.stringify(drama));
     const host = url.host == "example.com" ? "localhost:8787" : url.host;
@@ -174,7 +180,7 @@ function handleRoot(url) {
     return handleDrama(new URL(`https://${host}/${dramaUrl}`));
 }
 
-function handleDrama(url) {
+function createDramaMessage(url) {
 	let dramaIds = JSON.parse(atob(url.pathname.split("/")[1]));
 	let usedDramaIds = { sentence: dramaIds.sentence };
     let message = sentences[dramaIds.sentence];
@@ -191,12 +197,42 @@ function handleDrama(url) {
             message = message.replace(placeholder, replacement);
         }
 	}
-	
-	url.pathname = "/" + btoa(JSON.stringify(usedDramaIds));
 
-    return new Response(renderDrama(message, url.href), {
+	return {
+		usedDramaIds: usedDramaIds,
+		message: message
+	}
+}
+
+function handleDrama(url) {
+	let drama = createDramaMessage(url);
+	url.pathname = "/" + btoa(JSON.stringify(drama.usedDramaIds));
+
+    return new Response(renderDrama(drama.message, url.href), {
         headers: {
             "content-type": "text/html;charset=utf8"
+        }
+    });
+}
+
+function handleDramaApi(url) {
+	const drama = generateRandomDrama();
+    
+    const dramaUrl = btoa(JSON.stringify(drama));
+    const host = url.host == "example.com" ? "localhost:8787" : url.host;
+
+	const dramaPermaLink = new URL(`https://${host}/${dramaUrl}`)
+	const dramaMessage = createDramaMessage(new URL(`https://${host}/${dramaUrl}`));
+	dramaPermaLink.pathname = "/" + btoa(JSON.stringify(dramaMessage.usedDramaIds));
+
+	let response = {
+		message: dramaMessage.message,
+		permalink: dramaPermaLink.href
+	}
+
+    return new Response(JSON.stringify(response), {
+        headers: {
+            "content-type": "application/json;charset=utf8"
         }
     });
 }
@@ -220,6 +256,8 @@ async function handleRequest(request) {
         return handleRoot(url);
     } else if (url.pathname == "/favicon.ico") {
 		return handle404();
+	} else if (url.pathname == "/api/generate") {
+		return handleDramaApi(url);
 	} else {
         return handleDrama(url);
     }
