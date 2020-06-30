@@ -138,8 +138,10 @@ function randomIndex(array) {
 function renderDrama(message, share) {
     return `
 <html>
-    <head>
-        <title>Spigot Drama Generator</title>
+	<head>
+		<title>Spigot Drama Generator</title>
+		<meta name="description" content="${message}" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
             body {
                 font-family: sans-serif;
