@@ -191,6 +191,8 @@ function handleDrama(url) {
             message = message.replace(placeholder, replacement);
         }
 	}
+
+	message = message.replace("s's", "s'");
 	
 	url.pathname = "/" + btoa(JSON.stringify(usedDramaIds));
 
