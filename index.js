@@ -6,15 +6,15 @@ const combinations = {
     function: ["1.8 support", "mod support", "1.7.10 support", "1.8 combat", "chat formatting", "Velocity support", "Bungeecord support", "Sponge support", "Forge compatibility", "async teleportation", "/kittycannon", "/beezooka", "Paper exclusivity", "PaperLib.suggestPaper()", "dupe fixes", "economy", "RGB support", "realism", "new player capes", "more drama", "less drama", "drama generation commands", "custom enchantments", "overpowered items", "underpowered items", "achievements", "quests", "more annoying worldgen", "legacy color codes", "spigot bugs", "datapacks", "automated wizjany pinging", "improved API", "GPL compliance", "overpowered commands", "underpowered commands", "anti-cheat", "mixins", "patches", "MCP mappings", "Yarn mappings", "Mojang mappings", "Brigadier support", "hover events", "click events", "the MIT license"],
     adj: ["bad", "wrong", "illegal", "horrible", "nasty", "not in SpigotCraft", "noncompliant with Mojang's EULA", "a serious problem", "incompatible", "a waste of time", "wonderful", "amazing", "toxic", "too vanilla", "shameful", "disappointing", "bloated", "outdated", "incorrect", "full of drama", "too realistic", "terrible", "not GPL compliant"],
     badsoft: ["malware", "spyware", "adware", "DRM", "viruses", "trojans", "keyloggers", "stolen code", "easter eggs", "potential login stealers", "adf.ly links", "bad code", "stolen assets", "malicious code", "secret backdoors", "kangarko/Foundation", "obfuscation", "Songoda plugins", "ransomware", "remote code execution", "precompiled Spigot binaries", "force ops"],
-    drama: ["bugs", "crashes", "drama", "lots of drama", "imbalance", "pain and suffering", "piracy", "bees", "adf.ly", "dupe glitches", "lighting bugs", "obfuscation", "hack clients", "premium plugins"],
+    drama: ["bugs", "crashes", "drama", "lots of drama", "imbalance", "pain and suffering", "piracy", "bees", "adf.ly", "dupe glitches", "lighting bugs", "obfuscation", "hack clients", "premium plugins", "community feedback", "incompetence", "mass Discord pings", "damage control"],
     crash: ["crash", "explode", "break", "lag", "blow up", "corrupt chunks", "corrupt worlds", "rain hellfish", "spawn bees", "drop /nuke", "hold servers ransom"],
-    ban: ["ban", "kick", "put a pumpkin of shame on", "add commands mocking", "blacklist", "whitelist", "give admin rights to", "shame", "destroy", "/nuke", "\"no u\"s"],
-    code: ["code", "assets", "ideas", "concepts", "a single function", "5 lines of code", "a class", "a few files", "a ZIP file", "Gradle buildscripts", "a GitHub repository", "a pom.xml", "obfuscated class files"],
-    worse: ["worse", "better", "faster", "slower", "more stable", "less buggy", "more functional", "more vanilla", "less vanilla", "more buggy", "more broken"],
+    ban: ["ban", "kick", "put a pumpkin of shame on", "add commands mocking", "blacklist", "whitelist", "give admin rights to", "shame", "destroy", "/nuke", "\"no u\""],
+    code: ["code", "assets", "ideas", "concepts", "a single function", "5 lines of code", "a class", "a few files", "a ZIP file", "Gradle buildscripts", "a GitHub repository", "a pom.xml", "obfuscated class files", "precompiled binaries"],
+    worse: ["worse", "better", "faster", "slower", "more stable", "less buggy", "more functional", "more vanilla", "less vanilla", "more buggy", "more broken", "less competent"],
     ac1: ["sue", "destroy the life of", "flame", "cause drama about", "complain about", "kick", "threaten to sue", "wave empty threats of lawsuits at", "DMCA", "yell about in IRC", "randomly ping", "decompile", "enforce the GPL against", "insult the code of", "rant about"],
     price: ["$100", "$200", "$250", "$300", "$350", "$400", "$450", "$500", "$600", "$1,000,000", "$15", "$5", "€100", "€250"],
-    activates: ["activates", "works", "functions", "breaks", "disables", "eliminates", "enhances", "corrupts", "deletes"],
-    says: ["says", "tweets", "claims", "confirms", "denies", "announces", "agrees", "spams", "declares", "pings @everyone to announce", "rants", "locks the SpigotMC Discord for a two hour long monologue because"],
+    activates: ["activates", "works", "functions", "breaks", "disables", "extracts", "enhances", "corrupts", "deletes"],
+    says: ["says", "tweets", "claims", "confirms", "denies", "announces", "agrees", "spams", "declares", "pings @everyone to announce", "rants", "locks the SpigotMC Discord for a two hour long monologue to state"],
     enormous: ["big", "large", "huge", "gigantic", "enormous", "colossal", "Hypixel-sized"],
     payment: ["PayPal", "Xsolla", "Mollie", "Stripe", "Patreon", "Open Collective", "Ko-fi", "Tebex"]
 };
@@ -40,11 +40,11 @@ const sentences = [
     "[people] complains that [people] replaced [things] by [things] on [servers]",
     "[people] complains that [people] removed [function] on [servers]",
     "[people] decided that [things] is too [adj] and replaced it with [things]",
-    "[people] [says] [things] is [adj].",
-    "[people] [says] [things] is literally [adj].",
-    "[things] is not updated for the latest version of Minecraft.",
-    "[people] removes [things] from [servers].",
-    "[people] adds [things] to [servers].",
+    "[people] [says] [things] is [adj]",
+    "[people] [says] [things] is literally [adj]",
+    "[things] is not updated for the latest version of Minecraft",
+    "[people] removes [things] from [servers]",
+    "[people] adds [things] to [servers]",
     "[people] quits plugin development. Fans of [things] rage.",
     "[people] is found to secretly like [things]",
     "[people] openly hates [function] in [things]",
@@ -129,6 +129,13 @@ const sentences = [
     "[people] [says] [payment] is [worse] than [payment]",
     "[people] decides to rewrite [things] to be more like [things]",
     "[people] decides to rewrite [things] to be less like [things]",
+    "[people] ignores [people]'s complaints about [sites], causing more [drama]",
+    "[people] ignores [sites]'s complaints about [sites], causing more [drama]",
+    "[people] grows tired of [people] and quits [sites]",
+    "[people] ignores [people]'s complaints about [things], causing more [drama]",
+    "[people] ignores [sites]'s complaints about [things], causing more [drama]",
+    "[people] deletes [people]'s posts on [sites] to protect their reputation",
+    "[people] does nothing about [drama], as usual",
 ];
 
 function randomIndex(array) {
@@ -153,7 +160,7 @@ function renderDrama(message, share) {
     <body>
         <h3>Spigot Drama Generator</h3>
         <h1>${message}</h1>
-        <h6><a href="/">Generate more drama!</a> <a href="${share}">(permalink)</a><br /><br />This website is made in jest - don't take it too seriously!<br />Developed by md678685; PRs welcome on <a href="https://github.com/md678685/spigot-drama-generator">GitHub</a>.<br />Inspired by (and heavily borrows from) <a href="https://github.com/asiekierka/MinecraftDramaGenerator/">asiekierka's Minecraft Drama Generator</a>.</h6>
+        <h6><a href="/">Generate more drama!</a> <a href="${share}">(permalink)</a><br /><br />This website is made in jest - don't take it too seriously!<br />Developed by md678685; PRs welcome on <a href="https://github.com/md678685/spigot-drama-generator">GitHub</a>.<br />Inspired by (and heavily borrows from) <a href="https://github.com/asiekierka/MinecraftDramaGenerator/">asiekierka's Minecraft Drama Generator</a>.<br><a href="https://www.reddit.com/r/mbax/comments/hwhfua/a_letter_to_the_redditor/">RIP r/admincraft</a></h6>
     </body>
 </html>
     `
