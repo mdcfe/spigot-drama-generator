@@ -11,7 +11,7 @@ const combinations = {
     ban: ["ban", "kick", "put a pumpkin of shame on", "add commands mocking", "blacklist", "whitelist", "give admin rights to", "shame", "destroy", "/nuke", "\"no u\""],
     code: ["code", "assets", "ideas", "concepts", "a single function", "5 lines of code", "a class", "a few files", "a ZIP file", "Gradle buildscripts", "a GitHub repository", "a pom.xml", "obfuscated class files", "precompiled binaries"],
     worse: ["worse", "better", "faster", "slower", "more stable", "less buggy", "more functional", "more vanilla", "less vanilla", "more buggy", "more broken", "less competent"],
-    ac1: ["sue", "destroy the life of", "flame", "cause drama about", "complain about", "kick", "threaten to sue", "wave empty threats of lawsuits at", "DMCA", "yell about in IRC", "randomly ping", "decompile", "enforce the GPL against", "insult the code of", "rant about"],
+    ac1: ["sue", "destroy the life of", "flame", "cause drama about", "complain about", "kick", "threaten to sue", "wave empty threats of lawsuits at", "DMCA", "yell in IRC about", "randomly ping", "decompile", "enforce the GPL against", "insult the code of", "rant about"],
     price: ["$100", "$200", "$250", "$300", "$350", "$400", "$450", "$500", "$600", "$1,000,000", "$15", "$5", "€100", "€250"],
     activates: ["activates", "works", "functions", "breaks", "disables", "extracts", "enhances", "corrupts", "deletes"],
     says: ["says", "tweets", "claims", "confirms", "denies", "announces", "agrees", "spams", "declares", "pings @everyone to announce", "rants", "locks the SpigotMC Discord for a two hour long monologue to state"],
