@@ -9,7 +9,7 @@ const combinations = {
     drama: ["bugs", "crashes", "drama", "lots of drama", "imbalance", "pain and suffering", "piracy", "bees", "adf.ly", "dupe glitches", "lighting bugs", "obfuscation", "hack clients", "premium plugins"],
     crash: ["crash", "explode", "break", "lag", "blow up", "corrupt chunks", "corrupt worlds", "rain hellfish", "spawn bees", "drop /nuke", "hold servers ransom", "nullping crash", "overload Netty threads"],
     ban: ["ban", "kick", "put a pumpkin of shame on", "add commands mocking", "blacklist", "whitelist", "give admin rights to", "shame", "destroy", "/nuke", "\"no u\"s"],
-    code: ["code", "assets", "ideas", "concepts", "a single function", "5 lines of code", "a class", "a few files", "a ZIP file", "Gradle buildscripts", "a GitHub repository", "a pom.xml", "obfuscated class files", "a plugin", "a premium plugin"],
+    code: ["code", "assets", "ideas", "concepts", "a single function", "5 lines of code", "a class", "a few files", "a ZIP file", "Gradle buildscripts", "a GitHub repository", "a pom.xml", "obfuscated class files"],
     worse: ["worse", "better", "faster", "slower", "more stable", "less buggy", "more functional", "more vanilla", "less vanilla", "more buggy", "more broken"],
     ac1: ["sue", "destroy the life of", "flame", "cause drama about", "complain about", "kick", "threaten to sue", "wave empty threats of lawsuits at", "DMCA", "yell about in IRC", "randomly ping", "decompile", "enforce the GPL against", "insult the code of", "rant about"],
     price: ["$100", "$200", "$250", "$300", "$350", "$400", "$450", "$500", "$600", "$1,000,000", "$15", "$5", "€100", "€250"],
@@ -85,7 +85,6 @@ const sentences = [
 	"[people] rants about [things] on [sites]",
 	"[people] rants about [function] in plugins on [sites]",
 	"[people] steals code from [things]",
-	"[people] steals code from [people]",
 	"[things] breaks [function]",
 	"[people] sues [things] developers",
 	"[people] reminds you that [things] is [adj]",
@@ -130,6 +129,7 @@ const sentences = [
 	"[people] [says] [payment] is [worse] than [payment]",
 	"[people] decides to rewrite [things] to be more like [things]",
 	"[people] decides to rewrite [things] to be less like [things]",
+	"[people] steals code from [people]",
 ];
 
 function randomIndex(array) {
