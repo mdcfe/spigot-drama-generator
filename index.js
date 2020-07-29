@@ -192,30 +192,34 @@ function handleRoot(url) {
 }
 
 function handleDrama(url) {
-    let dramaIds = JSON.parse(atob(url.pathname.split("/")[1]));
-    let usedDramaIds = { sentence: dramaIds.sentence };
-    let message = sentences[dramaIds.sentence];
+    try {
+        let dramaIds = JSON.parse(atob(url.pathname.split("/")[1]));
+        let usedDramaIds = { sentence: dramaIds.sentence };
+        let message = sentences[dramaIds.sentence];
 
-    for (key in combinations) {
-        const placeholder = `[${key}]`;
-        if (!message.includes(placeholder)) continue;
-        usedDramaIds[key] = [];
-        for (id of dramaIds[key]) {
+        for (key in combinations) {
+            const placeholder = `[${key}]`;
             if (!message.includes(placeholder)) continue;
-            usedDramaIds[key].push(id);
+            usedDramaIds[key] = [];
+            for (id of dramaIds[key]) {
+                if (!message.includes(placeholder)) continue;
+                usedDramaIds[key].push(id);
 
-            const replacement = combinations[key][id];
-            message = message.replace(placeholder, replacement);
+                const replacement = combinations[key][id];
+                message = message.replace(placeholder, replacement);
+            }
         }
+        
+        url.pathname = "/" + btoa(JSON.stringify(usedDramaIds));
+
+        return new Response(renderDrama(message, url.href, url.pathname), {
+            headers: {
+                "content-type": "text/html;charset=utf8"
+            }
+        });
+    } catch (error) {
+        return handle404();
     }
-    
-    url.pathname = "/" + btoa(JSON.stringify(usedDramaIds));
-
-    return new Response(renderDrama(message, url.href, url.pathname), {
-        headers: {
-            "content-type": "text/html;charset=utf8"
-        }
-    });
 }
 
 function handle404() {
