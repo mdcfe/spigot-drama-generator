@@ -142,7 +142,7 @@ function randomIndex(array) {
     return Math.floor(Math.random() * array.length);
 }
 
-function renderDrama(message, share) {
+function renderDrama(message, share, sharePath) {
     return `
 <html>
     <head>
@@ -156,6 +156,12 @@ function renderDrama(message, share) {
                 text-align: center;
             }
         </style>
+        <script>
+            function onLoad() {
+                window.history.replaceState({}, "", "${sharePath}");
+            }
+            window.onload = onLoad;
+        </script>
     </head>
     <body>
         <h3>Spigot Drama Generator</h3>
@@ -178,7 +184,7 @@ function handleRoot(url) {
     const dramaUrl = btoa(JSON.stringify(drama));
     const host = url.host == "example.com" ? "localhost:8787" : url.host;
 
-    return handleDrama(new URL(`https://${host}/${dramaUrl}`));
+    return handleDrama(new URL(`${url.protocol}//${host}/${dramaUrl}`));
 }
 
 function handleDrama(url) {
@@ -201,7 +207,7 @@ function handleDrama(url) {
     
     url.pathname = "/" + btoa(JSON.stringify(usedDramaIds));
 
-    return new Response(renderDrama(message, url.href), {
+    return new Response(renderDrama(message, url.href, url.pathname), {
         headers: {
             "content-type": "text/html;charset=utf8"
         }
