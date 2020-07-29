@@ -159,10 +159,17 @@ function renderDrama(message, share, sharePath) {
                 font-family: sans-serif;
                 text-align: center;
             }
+            #more:focus::after {
+                content: " (press enter)";
+            }
+            #more:visited {
+                color: blue;
+            }
         </style>
         <script>
             function onLoad() {
                 window.history.replaceState({}, "", "${sharePath}");
+                document.getElementById("more").focus();
             }
             window.onload = onLoad;
         </script>
@@ -170,7 +177,7 @@ function renderDrama(message, share, sharePath) {
     <body>
         <h3>Spigot Drama Generator</h3>
         <h1>${message}</h1>
-        <h6><a href="/">Generate more drama!</a> <a href="${share}">(permalink)</a><br /><br />This website is made in jest - don't take it too seriously!<br />Developed by md678685; PRs welcome on <a href="https://github.com/md678685/spigot-drama-generator">GitHub</a>.<br />Inspired by (and heavily borrows from) <a href="https://github.com/asiekierka/MinecraftDramaGenerator/">asiekierka's Minecraft Drama Generator</a>.<br><a href="https://www.reddit.com/r/mbax/comments/hwhfua/a_letter_to_the_redditor/">RIP r/admincraft</a></h6>
+        <h6><a id="more" href="/">Generate more drama!</a><br /><br />This website is made in jest - don't take it too seriously!<br />Developed by md678685; PRs welcome on <a href="https://github.com/md678685/spigot-drama-generator">GitHub</a>.<br />Inspired by (and heavily borrows from) <a href="https://github.com/asiekierka/MinecraftDramaGenerator/">asiekierka's Minecraft Drama Generator</a>.<br /><br /><a href="https://www.reddit.com/r/mbax/comments/hwhfua/a_letter_to_the_redditor/">RIP r/admincraft</a></h6>
     </body>
 </html>
     `
