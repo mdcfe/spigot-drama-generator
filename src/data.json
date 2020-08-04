@@ -166,10 +166,8 @@
             "Kotlin",
             "Scala",
             "Groovy",
-            "Rift",
             "Forge mods",
-            "Fabric mods",
-            "Rift mods"
+            "Fabric mods"
         ],
         "servers": [
             "Empire Minecraft",
