@@ -165,7 +165,11 @@
             "premium plugins",
             "Kotlin",
             "Scala",
-            "Groovy"
+            "Groovy",
+            "Rift",
+            "Forge mods",
+            "Fabric mods",
+            "Rift mods"
         ],
         "servers": [
             "Empire Minecraft",
@@ -233,7 +237,9 @@
             "Groovy support",
             "automatic library downloading",
             "bytecode rewrites",
-            "reflection-based Spigot bug workarounds"
+            "reflection-based Spigot bug workarounds",
+            "Fabric compatibility",
+            "vanilla compatibility"
         ],
         "adj": [
             "bad",
