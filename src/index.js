@@ -1,16 +1,20 @@
-const { combinations, sentences } = require("./data.json");
+const { randomIndex, randomEntry } = require("./util");
+const { combinations, sentences, social } = require("./data.json");
 
-function randomIndex(array) {
-    return Math.floor(Math.random() * array.length);
-}
-
-function renderDrama(message, share, sharePath) {
+function renderDrama(message, share, sharePath, teaser) {
     return `
 <html>
     <head>
         <title>Spigot Drama Generator</title>
         <meta name="description" content="${message}" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <meta name="og:title" content="${teaser}"/>
+        <meta name="og:type" content="website"/>
+        <meta name="og:url" content="${share}"/>
+        <meta name="og:site_name" content="Spigot Drama Generator"/>
+        <meta name="og:description" content="${message}"/>
+
         <link rel="icon" href="data:,">
         <style>
             body {
@@ -81,7 +85,9 @@ function handleDrama(url) {
         
         url.pathname = "/" + btoa(JSON.stringify(usedDramaIds));
 
-        return new Response(renderDrama(message, url.href, url.pathname), {
+        let teaser = randomEntry(social);
+
+        return new Response(renderDrama(message, url.href, url.pathname, teaser), {
             headers: {
                 "content-type": "text/html;charset=utf8"
             }

@@ -577,5 +577,11 @@
         "[people] reconciles with [people], causing [drama] on [sites]",
         "[people] [says] people should accept [people], causing [drama]",
         "[people] [says] people should accept [people], causing [drama] on [sites]"
+    ],
+    "social": [
+        "Hot off the press!",
+        "This just in!",
+        "Fresh drama!",
+        "Breaking news!"
     ]
 }
