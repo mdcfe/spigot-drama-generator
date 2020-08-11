@@ -1,0 +1,6 @@
+name = "spigot-drama-generator"
+type = "webpack"
+account_id = "c29688adad64beb8d6171dae3d0c394c"
+workers_dev = true
+route = ""
+zone_id = ""
