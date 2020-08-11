@@ -26,11 +26,34 @@ function renderDrama(message, share, sharePath, teaser) {
             }
         </style>
         <script>
+            const konami = ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a"];
+            const inputs = ["", "", "", "", "", "", "", "", "", ""]
+
+            function pushInput(key) {
+                inputs.shift();
+                inputs.push(key);
+            }
+
+            function checkInputs() {
+                for (i in inputs) {
+                    if (konami[i] != inputs[i]) {
+                        return false;
+                    }
+                }
+                return true;
+            }
+
             function onLoad() {
                 window.history.replaceState({}, "", "${sharePath}");
             }
 
             function onKeyDown(e) {
+                pushInput(e.key);
+
+                if (checkInputs()) {
+                    document.getElementById("fight").innerHTML = "<img src=\\"https://media1.tenor.com/images/747305f3c5cbcb6bce00b9bea17a7978/tenor.gif\\" alt=\\"FIIIIIIGHT!\\"/>"
+                }
+
                 if (e.key == "Enter") {
                     window.location = "/";
                 }
@@ -43,6 +66,7 @@ function renderDrama(message, share, sharePath, teaser) {
     <body>
         <h3>Spigot Drama Generator</h3>
         <h1>${message}</h1>
+        <span id="fight"></span>
         <h6><a id="more" href="/">Generate more drama!</a> (or press enter)<br /><br />This website is made in jest - don't take it too seriously!<br />Developed by md678685; PRs welcome on <a href="https://github.com/md678685/spigot-drama-generator">GitHub</a>.<br />Inspired by (and heavily borrows from) <a href="https://github.com/asiekierka/MinecraftDramaGenerator/">asiekierka's Minecraft Drama Generator</a>.<br /><br /><a href="https://www.reddit.com/r/mbax/comments/hwhfua/a_letter_to_the_redditor/">RIP r/admincraft</a></h6>
     </body>
 </html>
