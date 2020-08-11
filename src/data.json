@@ -576,7 +576,13 @@
         "[people] reconciles with [people], causing [drama]",
         "[people] reconciles with [people], causing [drama] on [sites]",
         "[people] [says] people should accept [people], causing [drama]",
-        "[people] [says] people should accept [people], causing [drama] on [sites]"
+        "[people] [says] people should accept [people], causing [drama] on [sites]",
+        "[sites] updates their [document], causing [drama]",
+        "[sites] updates their [document], [sites] rages",
+        "[sites] updates their [document], [people] quits in protest",
+        "[things] updates their [document], causing [drama]",
+        "[things] updates their [document], [sites] rages",
+        "[things] updates their [document], [people] quits in protest"
     ],
     "social": [
         "Hot off the press!",
