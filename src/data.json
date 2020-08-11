@@ -52,7 +52,10 @@
             "bloodmc",
             "gabizou",
             "TheBusyBiscuit",
-            "octylFractal"
+            "octylFractal",
+            "aurora",
+            "MrIvanPlays",
+            "Chew"
         ],
         "sites": [
             "SpigotMC Forums",
@@ -304,7 +307,10 @@
             "community feedback",
             "incompetence",
             "mass Discord pings",
-            "damage control"
+            "damage control",
+            "outrage",
+            "mild annoyance",
+            "chaos"
         ],
         "crash": [
             "crash",
@@ -438,6 +444,12 @@
             "Open Collective",
             "Ko-fi",
             "Tebex"
+        ],
+        "document": [
+            "code of conduct",
+            "community guidelines",
+            "contributing guide",
+            "contributor license agreement"
         ]
     },
     "sentences": [
@@ -560,6 +572,10 @@
         "[people] steals code from [people]",
         "[people] releases [code] from [things] as a standalone library for [function]",
         "[people] [says] users of [things] should feel bad",
-        "[people] rewrites [things] to focus on [function] instead of [function]"
+        "[people] rewrites [things] to focus on [function] instead of [function]",
+        "[people] reconciles with [people], causing [drama]",
+        "[people] reconciles with [people], causing [drama] on [sites]",
+        "[people] [says] people should accept [people], causing [drama]",
+        "[people] [says] people should accept [people], causing [drama] on [sites]"
     ]
 }
