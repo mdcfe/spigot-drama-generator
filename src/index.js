@@ -74,10 +74,11 @@ function renderDrama(message, share, sharePath, teaser) {
             <br />
             Developed by md678685; PRs welcome on <a href="https://github.com/md678685/spigot-drama-generator">GitHub</a>.
             <br />
+            Inspired by (and heavily borrows from) <a href="https://github.com/asiekierka/MinecraftDramaGenerator/">asiekierka's Minecraft Drama Generator</a>.
+            <br />
+            <br />
             <i>Now available in <a href="https://twitter.com/SpigotDrama">Twitter</a> form!</i>
             <br />
-            Inspired by (and heavily borrows from) <a href="https://github.com/asiekierka/MinecraftDramaGenerator/">asiekierka's Minecraft Drama Generator</a>.
-            <br /><br />
             <a href="https://www.reddit.com/r/mbax/comments/hwhfua/a_letter_to_the_redditor/">RIP r/admincraft</a>
         </h6>
     </body>
