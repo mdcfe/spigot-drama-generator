@@ -79,7 +79,7 @@ function renderDrama(message, share, sharePath, teaser) {
             <br />
             <i>Now available in <a href="https://twitter.com/SpigotDrama">Twitter</a> form!</i>
             <br />
-            <a href="https://api.chew.pro/spigotdrama">JSON API</a>
+            <a href="https://api.chew.pro/spigotdrama">Chew's JSON API (unofficial)</a>
             <br />
             <a href="https://www.reddit.com/r/mbax/comments/hwhfua/a_letter_to_the_redditor/">RIP r/admincraft</a>
         </h6>
