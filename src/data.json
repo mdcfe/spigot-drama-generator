@@ -450,6 +450,10 @@
             "community guidelines",
             "contributing guide",
             "contributor license agreement"
+        ],
+        "events": [
+            "Hacktoberfest",
+            "Google Summer of Code"
         ]
     },
     "sentences": [
@@ -582,12 +586,28 @@
         "[sites] updates their [document], [people] quits in protest",
         "[things] updates their [document], causing [drama]",
         "[things] updates their [document], [sites] rages",
-        "[things] updates their [document], [people] quits in protest"
+        "[things] updates their [document], [people] quits in protest",
+        "[people] adds [code] to [things] for [events]",
+        "[sites] adds [code] to [things] for [events]",
+        "[people] adds [badsoft] to [things] for [events]",
+        "[sites] adds [badsoft] to [things] for [events]",
+        "[people] adds [code] to [things] for [events], causing [drama]",
+        "[sites] adds [code] to [things] for [events], causing [drama]",
+        "[people] adds [badsoft] to [things] for [events], causing [drama]",
+        "[sites] adds [badsoft] to [things] for [events], causing [drama]",
+        "[people] adds [code] to [things] for [events], causing [drama] on [sites]",
+        "[sites] adds [code] to [things] for [events], causing [drama] on [sites]",
+        "[people] adds [badsoft] to [things] for [events], causing [drama] on [sites]",
+        "[sites] adds [badsoft] to [things] for [events], causing [drama] on [sites]",
+        "[people] bans [people] from [sites] for misconduct during [events]"
     ],
     "social": [
         "Hot off the press!",
         "This just in!",
         "Fresh drama!",
-        "Breaking news!"
+        "Breaking news!",
+        "Drama alert!",
+        "Trending on Twitter!",
+        "Trending on Hacker News!"
     ]
 }
