@@ -55,7 +55,8 @@
             "octylFractal",
             "aurora",
             "MrIvanPlays",
-            "Chew"
+            "Chew",
+            "Vicarious"
         ],
         "sites": [
             "SpigotMC Forums",
@@ -169,6 +170,7 @@
             "Kotlin",
             "Scala",
             "Groovy",
+            "Syscraft",
             "Yatopia"
         ],
         "servers": [
@@ -426,7 +428,8 @@
             "declares",
             "pings @everyone to announce",
             "rants",
-            "locks the SpigotMC Discord for a two hour long monologue to state"
+            "locks the SpigotMC Discord for a two hour long monologue to state",
+            "sets up a bot to say"
         ],
         "enormous": [
             "big",
