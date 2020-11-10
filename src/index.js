@@ -69,7 +69,8 @@ function renderDrama(message, share, sharePath, teaser) {
         <span id="fight"></span>
         <h6>
             <a id="more" href="/">Generate more drama!</a> (or press enter)
-            <br /><br />
+            <br />
+            <br />
             This website is made in jest - don't take it too seriously!
             <br />
             Developed by md678685; PRs welcome on <a href="https://github.com/md678685/spigot-drama-generator">GitHub</a>.
@@ -81,7 +82,7 @@ function renderDrama(message, share, sharePath, teaser) {
             <br />
             <a href="https://api.chew.pro/spigotdrama">Chew's JSON API (unofficial)</a>
             <br />
-            <a href="https://www.reddit.com/r/mbax/comments/hwhfua/a_letter_to_the_redditor/">RIP r/admincraft</a>
+            <a href="https://syscraft.org/">Long live Syscraft - the new place for resources for Minecraft server admins, developers and hosts</a>
         </h6>
     </body>
 </html>
