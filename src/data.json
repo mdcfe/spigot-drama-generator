@@ -83,7 +83,9 @@
             "MOSS Discord",
             "EssentialsX issue tracker",
             "Sponge Forums",
-            "SpigotMC Discord"
+            "SpigotMC Discord",
+            "Incendo",
+            "Syscraft"
         ],
         "things": [
             "Paper",
@@ -171,7 +173,11 @@
             "Scala",
             "Groovy",
             "Syscraft",
-            "Yatopia"
+            "Yatopia",
+            "BKCommonLib",
+            "Krypton",
+            "Crossstitch",
+            "Hyperverse"
         ],
         "servers": [
             "Empire Minecraft",
@@ -290,7 +296,8 @@
             "precompiled Spigot binaries",
             "force ops",
             "server crashers",
-            "arbitrary JavaScript execution"
+            "arbitrary JavaScript execution",
+            "Lombok"
         ],
         "drama": [
             "bugs",
@@ -356,7 +363,10 @@
             "a GitHub repository",
             "a pom.xml",
             "obfuscated class files",
-            "precompiled binaries"
+            "precompiled binaries",
+            "precompiled natives",
+            "a sources jar",
+            "a Javadoc jar"
         ],
         "worse": [
             "worse",
@@ -448,7 +458,8 @@
             "Patreon",
             "Open Collective",
             "Ko-fi",
-            "Tebex"
+            "Tebex",
+            "GitHub Sponsors"
         ],
         "document": [
             "code of conduct",
@@ -459,6 +470,18 @@
         "events": [
             "Hacktoberfest",
             "Google Summer of Code"
+        ],
+        "platforms": [
+            "Bukkit",
+            "Bungeecord",
+            "Paper",
+            "Sponge",
+            "Velocity",
+            "Forge",
+            "Fabric",
+            "CanaryMod",
+            "Cloudburst",
+            "Geyser"
         ]
     },
     "sentences": [
@@ -604,7 +627,18 @@
         "[sites] adds [code] to [things] for [events], causing [drama] on [sites]",
         "[people] adds [badsoft] to [things] for [events], causing [drama] on [sites]",
         "[sites] adds [badsoft] to [things] for [events], causing [drama] on [sites]",
-        "[people] bans [people] from [sites] for misconduct during [events]"
+        "[people] bans [people] from [sites] for misconduct during [events]",
+        "[people] ports [things] to [platforms]",
+        "[people] ports [things] to [platforms], causing [drama]",
+        "[people] ports [things] to [platforms], causing [drama] on [sites]",
+        "[people] ports [things] to [platforms], [sites] rages",
+        "[people] removes [platforms] support from [things]",
+        "[people] removes [platforms] support from [things], causing [drama]",
+        "[people] removes [platforms] support from [things], causing [drama] on [sites]",
+        "[people] removes [platforms] support from [things], [sites] rages",
+        "[people] bans [platforms]-related software from [sites]",
+        "[people] bans [things] from [sites] for breaking the [document]",
+        "[people] bans [people] from [sites] for breaking the [document]"
     ],
     "social": [
         "Hot off the press!",
