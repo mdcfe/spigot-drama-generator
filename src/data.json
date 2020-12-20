@@ -177,7 +177,8 @@
             "BKCommonLib",
             "Krypton",
             "Crossstitch",
-            "Hyperverse"
+            "Hyperverse",
+            "Privacy"
         ],
         "servers": [
             "Empire Minecraft",
@@ -380,7 +381,8 @@
             "less vanilla",
             "more buggy",
             "more broken",
-            "less competent"
+            "less competent",
+            "kangarko like",
         ],
         "ac1": [
             "sue",
@@ -397,7 +399,8 @@
             "decompile",
             "enforce the GPL against",
             "insult the code of",
-            "rant about"
+            "rant about",
+            "exposes"
         ],
         "price": [
             "$100",
@@ -638,7 +641,11 @@
         "[people] removes [platforms] support from [things], [sites] rages",
         "[people] bans [platforms]-related software from [sites]",
         "[people] bans [things] from [sites] for breaking the [document]",
-        "[people] bans [people] from [sites] for breaking the [document]"
+        "[people] bans [people] from [sites] for breaking the [document]",
+        "[people] joins governments around to world to ruin [things]",
+        "[people] joins governments around to world to ruin [badsoft]",
+        "[people] joins governments around to world to ruin [sites]",
+        "[people] joins governments around to world to ruin [servers]"
     ],
     "social": [
         "Hot off the press!",
