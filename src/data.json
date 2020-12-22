@@ -56,7 +56,9 @@
             "aurora",
             "MrIvanPlays",
             "Chew",
-            "Vicarious"
+            "Vicarious",
+            "extended_clip",
+            "Funnycube"
         ],
         "sites": [
             "SpigotMC Forums",
@@ -85,7 +87,8 @@
             "Sponge Forums",
             "SpigotMC Discord",
             "Incendo",
-            "Syscraft"
+            "Syscraft",
+            "HelpChat Discord"
         ],
         "things": [
             "Paper",
@@ -178,7 +181,8 @@
             "Krypton",
             "Crossstitch",
             "Hyperverse",
-            "Privacy"
+            "Privacy",
+            "PlaceholderAPI"
         ],
         "servers": [
             "Empire Minecraft",
