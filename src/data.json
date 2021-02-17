@@ -58,7 +58,9 @@
             "Chew",
             "Vicarious",
             "extended_clip",
-            "Funnycube"
+            "Funnycube",
+            "broccolai",
+            "aberdeener"
         ],
         "sites": [
             "SpigotMC Forums",
@@ -182,7 +184,8 @@
             "Crossstitch",
             "Hyperverse",
             "Privacy",
-            "PlaceholderAPI"
+            "PlaceholderAPI",
+            "VanillaGradle"
         ],
         "servers": [
             "Empire Minecraft",
@@ -196,7 +199,10 @@
             "Mineteria",
             "CubeCraft",
             "The Hive",
-            "Realms"
+            "Realms",
+            "Origin Realms",
+            "Mineclub",
+            "AusCraft"
         ],
         "function": [
             "1.8 support",
@@ -228,7 +234,7 @@
             "quests",
             "more annoying worldgen",
             "legacy color codes",
-            "spigot bugs",
+            "Spigot bugs",
             "datapacks",
             "automated wizjany pinging",
             "improved API",
@@ -250,7 +256,8 @@
             "Groovy support",
             "automatic library downloading",
             "bytecode rewrites",
-            "reflection-based Spigot bug workarounds"
+            "reflection-based Spigot bug workarounds",
+            "Bukkit support"
         ],
         "adj": [
             "bad",
@@ -658,6 +665,7 @@
         "Breaking news!",
         "Drama alert!",
         "Trending on Twitter!",
-        "Trending on Hacker News!"
+        "Trending on Hacker News!",
+        "Trending on Reddit!"
     ]
 }
