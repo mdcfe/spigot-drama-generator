@@ -684,7 +684,11 @@
         "[people] [forks] [things]",
         "[people] [forks] [things], causing [drama]",
         "[people] [forks] [things], causing [drama] on [sites]",
-        "[people] causes [drama], [people] [forks] [things] in protest"
+        "[people] causes [drama], [people] [forks] [things] in protest",
+        "[sites] [forks] [things]",
+        "[sites] [forks] [things], causing [drama]",
+        "[sites] [forks] [things], causing [drama] on [sites]",
+        "[people] causes [drama], [sites] [forks] [things] in protest"
     ],
     "social": [
         "Hot off the press!",
