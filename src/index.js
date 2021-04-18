@@ -78,11 +78,9 @@ function renderDrama(message, share, sharePath, teaser) {
             Inspired by (and heavily borrows from) <a href="https://github.com/asiekierka/MinecraftDramaGenerator/">asiekierka's Minecraft Drama Generator</a>.
             <br />
             <br />
-            <i>Now available in <a href="https://twitter.com/SpigotDrama">Twitter</a> form!</i>
+            <i>Unofficial alternative forms: <a href="https://api.chew.pro/spigotdrama">Chew's JSON API</a> | <a href="https://twitter.com/SpigotDrama">Twitter bot</a></i>
             <br />
-            <a href="https://api.chew.pro/spigotdrama">Chew's JSON API (unofficial)</a>
-            <br />
-            <a href="https://syscraft.org/">Long live Syscraft - the new place for resources for Minecraft server admins, developers and hosts</a>
+            <a href="https://syscraft.org/">Long live Syscraft!</a>
         </h6>
     </body>
 </html>
