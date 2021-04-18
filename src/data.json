@@ -16,7 +16,7 @@
             "andrewkm",
             "KHobbits",
             "ElgarL",
-            "md678685",
+            "mdcfe",
             "Trent",
             "SupaHam",
             "pop4959",
@@ -60,7 +60,13 @@
             "extended_clip",
             "Funnycube",
             "broccolai",
-            "aberdeener"
+            "aberdeener",
+            "Inscrutable",
+            "dualspiral",
+            "modmuss50",
+            "i509VCB",
+            "jpenilla",
+            "ocelotpotpie"
         ],
         "sites": [
             "SpigotMC Forums",
@@ -90,7 +96,9 @@
             "SpigotMC Discord",
             "Incendo",
             "Syscraft",
-            "HelpChat Discord"
+            "HelpChat Discord",
+            "the entire Fabric modding scene",
+            "the Minecraft community"
         ],
         "things": [
             "Paper",
@@ -185,7 +193,9 @@
             "Hyperverse",
             "Privacy",
             "PlaceholderAPI",
-            "VanillaGradle"
+            "VanillaGradle",
+            "DataFixerUpper",
+            "Airplane"
         ],
         "servers": [
             "Empire Minecraft",
@@ -202,7 +212,8 @@
             "Realms",
             "Origin Realms",
             "Mineclub",
-            "AusCraft"
+            "AusCraft",
+            "Sponge Community Server"
         ],
         "function": [
             "1.8 support",
@@ -257,7 +268,12 @@
             "automatic library downloading",
             "bytecode rewrites",
             "reflection-based Spigot bug workarounds",
-            "Bukkit support"
+            "Bukkit support",
+            "DataFixerUpper optimisations",
+            "Java 6 support",
+            "Java 8 support",
+            "Java 11 support",
+            "kyori/adventure integration"
         ],
         "adj": [
             "bad",
@@ -282,7 +298,8 @@
             "full of drama",
             "too realistic",
             "terrible",
-            "not GPL compliant"
+            "not GPL compliant",
+            "vomit-inducing"
         ],
         "badsoft": [
             "malware",
@@ -413,6 +430,12 @@
             "rant about",
             "exposes"
         ],
+        "forks": [
+            "forks",
+            "rebrands",
+            "hard forks",
+            "upstreams"
+        ],
         "price": [
             "$100",
             "$200",
@@ -483,7 +506,8 @@
         ],
         "events": [
             "Hacktoberfest",
-            "Google Summer of Code"
+            "Google Summer of Code",
+            "State of Sponge"
         ],
         "platforms": [
             "Bukkit",
@@ -656,7 +680,11 @@
         "[people] joins governments around to world to ruin [things]",
         "[people] joins governments around to world to ruin [badsoft]",
         "[people] joins governments around to world to ruin [sites]",
-        "[people] joins governments around to world to ruin [servers]"
+        "[people] joins governments around to world to ruin [servers]",
+        "[people] [forks] [things]",
+        "[people] [forks] [things], causing [drama]",
+        "[people] [forks] [things], causing [drama] on [sites]",
+        "[people] causes [drama], [people] [forks] [things] in protest"
     ],
     "social": [
         "Hot off the press!",
