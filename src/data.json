@@ -66,7 +66,9 @@
             "modmuss50",
             "i509VCB",
             "jpenilla",
-            "ocelotpotpie"
+            "ocelotpotpie",
+            "Prof_Bloodstone",
+            "NotMyFault"
         ],
         "sites": [
             "SpigotMC Forums",
@@ -195,7 +197,9 @@
             "PlaceholderAPI",
             "VanillaGradle",
             "DataFixerUpper",
-            "Airplane"
+            "Airplane",
+            "Quilt",
+            "LazyDFU"
         ],
         "servers": [
             "Empire Minecraft",
@@ -273,7 +277,8 @@
             "Java 6 support",
             "Java 8 support",
             "Java 11 support",
-            "kyori/adventure integration"
+            "kyori/adventure integration",
+            "Quilt support"
         ],
         "adj": [
             "bad",
@@ -350,7 +355,8 @@
             "outrage",
             "mild annoyance",
             "chaos",
-            "forking"
+            "forking",
+            "pumpkins masquerading as pineapples"
         ],
         "crash": [
             "crash",
@@ -363,7 +369,8 @@
             "rain hellfish",
             "spawn bees",
             "drop /nuke",
-            "hold servers ransom"
+            "hold servers ransom",
+            "forkbomb"
         ],
         "ban": [
             "ban",
@@ -428,7 +435,7 @@
             "enforce the GPL against",
             "insult the code of",
             "rant about",
-            "exposes"
+            "expose"
         ],
         "forks": [
             "forks",
@@ -461,7 +468,8 @@
             "extracts",
             "enhances",
             "corrupts",
-            "deletes"
+            "deletes",
+            "initialises"
         ],
         "says": [
             "says",
@@ -476,7 +484,9 @@
             "pings @everyone to announce",
             "rants",
             "locks the SpigotMC Discord for a two hour long monologue to state",
-            "sets up a bot to say"
+            "sets up a bot to say",
+            "reveals",
+            "posts"
         ],
         "enormous": [
             "big",
@@ -519,7 +529,9 @@
             "Fabric",
             "CanaryMod",
             "Cloudburst",
-            "Geyser"
+            "Geyser",
+            "Quilt",
+            "FlintMC"
         ]
     },
     "sentences": [
@@ -688,7 +700,9 @@
         "[sites] [forks] [things]",
         "[sites] [forks] [things], causing [drama]",
         "[sites] [forks] [things], causing [drama] on [sites]",
-        "[people] causes [drama], [sites] [forks] [things] in protest"
+        "[people] causes [drama], [sites] [forks] [things] in protest",
+        "[sites] considers [things] [worse] than [things]",
+        "[people] considers [things] [worse] than [things]"
     ],
     "social": [
         "Hot off the press!",
@@ -698,6 +712,8 @@
         "Drama alert!",
         "Trending on Twitter!",
         "Trending on Hacker News!",
-        "Trending on Reddit!"
+        "Trending on Reddit!",
+        "Hot topic!",
+        "Things just got interesting..."
     ]
 }
