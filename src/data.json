@@ -356,7 +356,9 @@
             "mild annoyance",
             "chaos",
             "forking",
-            "pumpkins masquerading as pineapples"
+            "pumpkins masquerading as pineapples",
+            "SPOJMAP",
+            "flard"
         ],
         "crash": [
             "crash",
@@ -402,7 +404,8 @@
             "precompiled binaries",
             "precompiled natives",
             "a sources jar",
-            "a Javadoc jar"
+            "a Javadoc jar",
+            "a remapped jar"
         ],
         "worse": [
             "worse",
