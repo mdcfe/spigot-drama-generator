@@ -199,7 +199,8 @@
             "DataFixerUpper",
             "Airplane",
             "Quilt",
-            "LazyDFU"
+            "LazyDFU",
+            "NamelessMC"
         ],
         "servers": [
             "Empire Minecraft",
