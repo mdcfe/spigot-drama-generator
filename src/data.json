@@ -200,7 +200,8 @@
             "Airplane",
             "Quilt",
             "LazyDFU",
-            "NamelessMC"
+            "NamelessMC",
+            "Log4J"
         ],
         "servers": [
             "Empire Minecraft",
