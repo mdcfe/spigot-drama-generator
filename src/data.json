@@ -359,7 +359,8 @@
             "forking",
             "pumpkins masquerading as pineapples",
             "SPOJMAP",
-            "flard"
+            "flard",
+            "massive ban wave"
         ],
         "crash": [
             "crash",
@@ -516,7 +517,8 @@
             "code of conduct",
             "community guidelines",
             "contributing guide",
-            "contributor license agreement"
+            "contributor license agreement",
+            "non-disclosure agreement"
         ],
         "events": [
             "Hacktoberfest",
@@ -706,7 +708,15 @@
         "[sites] [forks] [things], causing [drama] on [sites]",
         "[people] causes [drama], [sites] [forks] [things] in protest",
         "[sites] considers [things] [worse] than [things]",
-        "[people] considers [things] [worse] than [things]"
+        "[people] considers [things] [worse] than [things]",
+        "[sites] update [document] to silence [drama] about [badsoft]",
+        "[sites] update [document] to silence [drama] about [things]",
+        "[sites] update [document] to silence [drama] about [people]",
+        "[people] get [ban] on [sites] after [document] update",
+        "[things] removed on [sites] after [document] update",
+        "[sites] force [badsoft] usage after [document] update",
+        "[sites] force [things] usage after [document] update",
+        "[sites] force [payment] usage after [document] update"
     ],
     "social": [
         "Hot off the press!",
