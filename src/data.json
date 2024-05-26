@@ -75,7 +75,8 @@
             "Michael",
             "EterNity",
             "MachineMaker",
-            "LichtHund"
+            "LichtHund",
+            "Owen"
         ],
         "sites": [
             "SpigotMC Forums",
@@ -208,7 +209,8 @@
             "Quilt",
             "LazyDFU",
             "NamelessMC",
-            "Folia"
+            "Folia",
+            "Configurate"
         ],
         "servers": [
             "Empire Minecraft",
@@ -367,7 +369,8 @@
             "forking",
             "pumpkins masquerading as pineapples",
             "SPOJMAP",
-            "flard"
+            "flard",
+            "cyclic dependencies"
         ],
         "crash": [
             "crash",
@@ -414,7 +417,8 @@
             "precompiled natives",
             "a sources jar",
             "a Javadoc jar",
-            "a remapped jar"
+            "a remapped jar",
+            "yaml comment support"
         ],
         "worse": [
             "worse",
