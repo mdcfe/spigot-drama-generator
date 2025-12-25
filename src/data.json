@@ -91,7 +91,8 @@
             "Patreon",
             "wiki.vg/Protocol",
             "Twitch",
-            "MCMarket",
+            "BuiltByBit",
+            "Polymart",
             "Songoda.com",
             "MineAcademy",
             "Hangar",
@@ -227,7 +228,9 @@
             "Origin Realms",
             "Mineclub",
             "AusCraft",
-            "Sponge Community Server"
+            "Sponge Community Server",
+            "some random p2w server",
+            "Purple Prisons"
         ],
         "function": [
             "1.8 support",
@@ -470,7 +473,8 @@
             "$15",
             "$5",
             "€100",
-            "€250"
+            "€250",
+            "free"
         ],
         "activates": [
             "activates",
@@ -706,6 +710,7 @@
         "[people] joins governments around to world to ruin [badsoft]",
         "[people] joins governments around to world to ruin [sites]",
         "[people] joins governments around to world to ruin [servers]",
+        "[people] joins governments around the world trying to promote [badsoft]",
         "[people] [forks] [things]",
         "[people] [forks] [things], causing [drama]",
         "[people] [forks] [things], causing [drama] on [sites]",
@@ -727,6 +732,6 @@
         "Trending on Hacker News!",
         "Trending on Reddit!",
         "Hot topic!",
-        "Things just got interesting..."
+        "Things just got interesting...",
     ]
 }
